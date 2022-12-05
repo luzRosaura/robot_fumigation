@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-1-g15f4949  Build Version: 1.6.7594.29634
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="robot_urdf">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="0.1175 -0.0282239429813107 -0.064828772887583"
+        rpy="0 0 0" />
+      <mass
+        value="14.2487993431658" />
+      <inertia
+        ixx="0.283227325634507"
+        ixy="-0.000220348860027086"
+        ixz="1.40177629801984E-16"
+        iyy="2.01336374035702"
+        iyz="-9.27554257715108E-05"
+        izz="2.19532881115155" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot_urdf/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot_urdf/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="from_lw">
+    <inertial>
+      <origin
+        xyz="0.876700766193184 0.698705813461268 -0.303714958820787"
+        rpy="0 0 0" />
+      <mass
+        value="29.2723060846668" />
+      <inertia
+        ixx="0.611569828485071"
+        ixy="1.35114162961979E-16"
+        ixz="-1.42625377808511E-11"
+        iyy="0.892248881148886"
+        iyz="-1.44904388156335E-16"
+        izz="0.611569828456168" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot_urdf/meshes/from_lw.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.298039215686275 0.298039215686275 0.298039215686275 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot_urdf/meshes/from_lw.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="from_lj"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="from_lw" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="from_rw">
+    <inertial>
+      <origin
+        xyz="0.876683400855439 -0.755184023401404 -0.303728175659267"
+        rpy="0 0 0" />
+      <mass
+        value="29.2723060846669" />
+      <inertia
+        ixx="0.611569828490698"
+        ixy="8.36511209904008E-17"
+        ixz="-3.40560092124794E-12"
+        iyy="0.892248881149007"
+        iyz="-6.31731792368991E-17"
+        izz="0.611569828450664" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot_urdf/meshes/from_rw.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.298039215686275 0.298039215686275 0.298039215686275 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot_urdf/meshes/from_rw.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="from_rj"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="from_rw" />
+    <axis
+      xyz="0 -1 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="back_lw">
+    <inertial>
+      <origin
+        xyz="-0.278299233806814 0.698705813461268 -0.303714958820793"
+        rpy="0 0 0" />
+      <mass
+        value="29.2723060846662" />
+      <inertia
+        ixx="0.611569828461395"
+        ixy="-9.01753540332497E-17"
+        ixz="1.82075219925542E-11"
+        iyy="0.892248881148729"
+        iyz="-1.6751023233699E-17"
+        izz="0.611569828479688" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot_urdf/meshes/back_lw.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.298039215686275 0.298039215686275 0.298039215686275 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot_urdf/meshes/back_lw.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="back_lj"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="back_lw" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="back_rw">
+    <inertial>
+      <origin
+        xyz="-0.278316599144561 -0.755184023401404 -0.303728175659267"
+        rpy="0 0 0" />
+      <mass
+        value="29.2723060846668" />
+      <inertia
+        ixx="0.611569828486648"
+        ixy="1.19677524979816E-16"
+        ixz="1.24658732450631E-11"
+        iyy="0.892248881148886"
+        iyz="1.05134647168139E-18"
+        izz="0.611569828454593" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot_urdf/meshes/back_rw.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.298039215686275 0.298039215686275 0.298039215686275 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot_urdf/meshes/back_rw.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="back_rj"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="back_rw" />
+    <axis
+      xyz="0 -1 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="30"
+      velocity="30" />
+  </joint>
+</robot>
